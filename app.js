@@ -17,11 +17,12 @@ app.set('view engine', 'ejs');
 // Set Routes
 app.get('', (req, res) => {
   res.render('index', { text: ' This is EJS' })
-})
+});
 
 app.get('/about', (req, res) => {
   res.render('about', { text: 'This is about' })
-})
+});
+
 let listener = app.listen(); 
 console.log(`Listening to port number ${listener.address().port}`);
 
